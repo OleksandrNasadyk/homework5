@@ -1,0 +1,55 @@
+* {
+    margin: 50px;
+    padding: 0;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    animation: animate1 4000ms infinite, animate2 4000ms infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    25% {
+        transform: translate(0px, 200px);
+    }
+
+    50% {
+        transform: translate(200px, 200px);
+    }
+
+    75% {
+        transform: translate(200px, 0px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+         background-color: blue;
+    }
+
+    50% {
+         background-color: green;
+    }
+
+    75% {
+         background-color: yellow;
+    }
+
+    100% {
+         background-color: red;
+    }
+}
